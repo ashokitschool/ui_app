@@ -1,60 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" >
-            <i class="fa-solid fa-cart-shopping"></i>Ecom Store </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" >
-                        <i class="fas fa-home"></i>HOME
-                    </a>
-                </li>
-                <li class="nav-item"><a class="nav-link active" routerLink="products" >Products</a></li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Category 
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="">
-                                    test
-                                </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" >[ ] CART</a>
-                        </li>
-                        <li class="nav-item" >
-                            <a class="nav-link active" href="">ORDERS</a>
-                        </li>
-                        <li class="nav-item dropdown" >
-                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user-circle"></i> test 
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="">View Profile</a></li>
-                                <li><a class="dropdown-item" href="">logout</a></li>
-                            </ul>
-                        </li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link active" routerLink="login">Login</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" routerLink="register">Register</a></li>
-                    
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#">ECommerce Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products">Products</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLink="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register">Register</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-</nav>
+  </nav>
