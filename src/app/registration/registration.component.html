@@ -1,11 +1,40 @@
-<p>registration works!</p>
-<p>registration works!</p>
+<div class="container">
+    <h1>User Registration</h1>
 
-<p>registration works!</p>
+    <form (submit)="userRegistration()">
+        <tr>
+            <td>Enter Name:</td>
+            <td>
+               <input type="text" name="name" [(ngModel)]="user.name" />
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Enter Email:</td>
+            <td>
+               <input type="email" name="email" [(ngModel)]="user.email" />
+            </td>
+        </tr>
+        <tr>
+            <td> Enter Password:</td>
+            <td>
+               <input type="password" name="pwd" [(ngModel)]="user.pwd" />
+            </td>
+        </tr>
+        <tr>
+            <td> Enter Phno:</td>
+            <td>
+               <input type="number" name="mobile" [(ngModel)]="user.mobile" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+               
+            </td>
+            <td>
+               <input type="submit" value="Register" />
+            </td>
+        </tr>
+    </form>
 
-<p>registration works!</p>
-
-<p>registration works!</p>
-
-<p>registration works!</p>
-
+</div>
